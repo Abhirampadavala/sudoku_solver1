@@ -1,0 +1,212 @@
+body{
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: rgb(238, 255, 142);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    td input{
+        width: 2em;
+        height: 2em;
+        text-align: center;
+    }
+    #alert-msg{
+        display: none;
+        color: red; 
+        font-size: 20px;
+        font-weight: 500;
+        text-align: center;
+        margin: 10px 0;
+    }
+    input{
+        border: 1px solid black;
+        color: black;
+        cursor: text;   
+        font-size: 1em;
+        font-weight: 900;
+        text-align: center;
+    }
+    
+    /* Remove spinner arrows from number inputs */
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+    
+    /* For Firefox */
+    input[type="number"] {
+        -moz-appearance: textfield;
+        appearance: textfield;
+    }
+    .top-row{
+        border-top: 2px solid black;
+    }
+    .bottom-row{
+        border-bottom: 2px solid black;
+    }
+    .col-start{
+       border-left: 2px solid black;
+    }
+    
+    .col-end{
+        border-right: 2px solid black;
+    }
+    .main-container {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 40px;
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+    
+    #content-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    .button-container {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin: 20px 0 0 0;
+    }
+    
+    button{
+        display: inline-block;
+        width: 120px;
+        height: 50px;
+        padding: 10px 20px;
+        background-color: rgb(16, 185, 252);
+        border: none;
+        border-radius: 2em;
+        font-size: 1em;
+        font-weight:bold;
+        color: white;
+        cursor: pointer;
+        
+    }
+    
+    #reset {
+        background-color: rgb(255, 87, 87);
+    }
+    
+    #reset:hover {
+        background-color: rgb(220, 60, 60);
+        box-shadow: 0px 2px 4px 0px rgba(139, 0, 0, 0.5);
+    }
+    button:hover {
+        box-shadow: 0px 2px 4px 0px rgb(5, 36, 61);
+    }
+    button:active{
+        border: 4px double rgb(5, 61, 40);
+    }
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    
+    p {
+        text-align: center;
+        margin: 10px 0;
+    }
+    .generator-section {
+        margin: 0;
+        padding: 25px;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);
+        text-align: center;
+        min-width: 250px;
+        max-width: 300px;
+        height: fit-content;
+    }
+    
+    .generator-section h3 {
+        margin: 0 0 15px 0;
+        color: #333;
+    }
+    
+    .difficulty-selector {
+        margin: 15px 0;
+    }
+    
+    .difficulty-selector label {
+        display: inline-block;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    .difficulty-selector select {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 14px;
+        background-color: white;
+    }
+    
+    #generate {
+        background-color: rgb(34, 197, 94);
+        margin: 10px 0 0 0;
+    }
+    
+    #generate:hover {
+        background-color: rgb(22, 163, 74);
+        box-shadow: 0px 2px 4px 0px rgba(34, 197, 94, 0.5);
+    }
+
+    @media screen and (max-width:630px){
+        body{
+            overflow:hidden;
+            padding: 10px;
+        }
+       td input{ 
+            width: 1.5em;
+            height: 1.5em;
+       }
+       
+       .main-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+       }
+       
+       #content-div{
+            margin: 0;
+       }
+       .button-container {
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin: 15px 0 0 0;
+       }
+       button{
+            width: 100px;
+            height: 45px;
+       }
+       
+       .generator-section {
+            margin: 0;
+            padding: 15px;
+            min-width: auto;
+            max-width: 90%;
+       }
+       
+       .difficulty-selector {
+            flex-direction: column;
+            align-items: center;
+       }
+       
+       .difficulty-selector label {
+            margin-bottom: 8px;
+       }
+
+    }
